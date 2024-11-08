@@ -22,27 +22,40 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+
+# Exercice Zeliq
+
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- node version: v20.18.0
+- npm version: v10.8.2
+- npx version: 10.8.2
+- nest version: 10.4.5
+
 
 ## Project setup
 
 ```bash
 $ npm install
+$ cp .env.template .env
 ```
 
+## To run and init Postgres
+
+```bash
+$ docker-compose up -d
+$ npx prisma migrate dev
+```
 ## Compile and run the project
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
 $ npm run start:dev
+```
 
-# production mode
-$ npm run start:prod
+## import postman collection
+
+```text
+Path: ./zeliq_ex/postman.json
 ```
 
 ## Run tests
